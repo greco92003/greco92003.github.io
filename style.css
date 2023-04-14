@@ -12,6 +12,17 @@ body {
     overflow-x: hidden;
 }
 
+
+.logo {
+    position: relative;
+    align-items: center;
+}
+
+.logo:hover {
+    transform: scale(1);
+	animation: pulse 1s infinite;
+}
+
 header {
     position: absolute;
     top: 0;
@@ -22,15 +33,6 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-
-.logo {
-    position: relative;
-}
-
-.logo:hover {
-    transform: scale(1);
-	animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
@@ -130,3 +132,38 @@ header {
         transform: scale(0.95);
 	}
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .parallax img { 
+    
+    margin-left: -275px;  
+    width: 200%;
+    }
+
+    #nuvemesq1 {
+    margin-left: -120px;
+    }
+
+    #nuvemesq2 {
+    margin-left: -200px;
+    }
+
+    #nuvemdir2 {
+        margin-left: -450px;
+        }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 40px 20px;
+    }
+
+    #text {
+        font-size: 4em;
+        top: 4em;
+    }
+    
+
+  }
